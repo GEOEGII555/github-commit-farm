@@ -21,6 +21,6 @@ const data = {
 
 jsonfile.writeFile(filePath, data);
 console.log(z);
-simpleGit().add([filePath]).commit(date, {"--date": date}, commit.bind(this, --z));
+simpleGit().add([filePath]).commit(date + random.int(0, 100000), {"--date": date}, commit.bind(this, --z));
 }
-commit(1000);
+commit(5000);
