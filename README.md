@@ -9,3 +9,11 @@ If you get an error while doing `git push`, you may need to setup access token f
 6. `git push` (ignore if it says that working tree is clean, it auto pushed if you see that message)
 7. `git log` to verify that commits got created
 8. Done! If it didn't work then I don't know why (fixed probably).
+
+# Common errors
+
+1. The current branch has no upstream.
+Firstly, verify if you added the origin.
+If you did, do `git push --set-upstream origin main`. If it succeeds, it should automatically set it as default, so you won't have to pass the --set-upstream argument every single time.
+2. The working tree is clean
+Either no commits, or it already pushed everything.
